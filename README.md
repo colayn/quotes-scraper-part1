@@ -16,9 +16,7 @@ The script handles pagination to ensure all available quotes are extracted.
 
 ## ⚙️ Tech Stack
 - Python 3
-- Requests
-- BeautifulSoup4
-- Pandas
+- Playwright
 
 ---
 
@@ -26,14 +24,19 @@ The script handles pagination to ensure all available quotes are extracted.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/colayn/quotes-scraper.git
-cd quotes-scraper
+git clone https://github.com/colayn/quotes-scraper-part1.git
+cd quotes-scraper-part1
 ```
 
 ### 2. Install dependencies
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate   # Linux / Ubuntu / macOS
+# venv\Scripts\activate    # Windows
+
 pip install -r requirements.txt
+playwright install chromium
 ```
 
 ### 3. Run the script
@@ -43,9 +46,4 @@ python scraper.py
 ```
 
 ## Output
-- CSV file containing all scraped quotes with authors and tags
-
-## Notes
-- Handles pagination
-- Uses retry-safe HTTP requests
-- Includes polite scraping delay
+- JSON
