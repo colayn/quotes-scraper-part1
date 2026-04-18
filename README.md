@@ -1,4 +1,4 @@
-# Quotes Scraper – Technical Screening Task
+# Quotes Scraper Part 1
 
 ## 📌 Overview
 This project is a Python-based web scraper that extracts quotes from:
@@ -9,8 +9,6 @@ It collects the following data:
 - Quote text
 - Author
 - Associated tags
-
-The script handles pagination to ensure all available quotes are extracted.
 
 ---
 
